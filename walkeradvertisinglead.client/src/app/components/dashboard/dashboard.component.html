@@ -1,0 +1,44 @@
+<div class="container mt-4">
+  <h2 class="text-center mt -4 mb-2">Leads Dashboard</h2>
+  <!-- Export Button -->
+  <button class="btn btn-primary btn-sm mb-4 float-end" (click)="exportToExcel()">Export to Excel</button>
+
+  <table class="table table-bordered table-light">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Zip Code</th>
+        <th scope="col">Email Permission</th>
+        <th scope="col"> Text Permission</th>
+        <th scope="col"> Email</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lead of leads">
+        <td>{{ lead.name }}</td>
+        <td>{{ lead.phoneNumber }}</td>
+        <td>{{ lead.zipCode }}</td>
+        <td>{{ lead.hasEmailPermission ? 'Yes' : 'No' }}</td>
+        <td>{{ lead.hasTextPermission ? 'Yes' : 'No' }}</td>
+
+        <td>
+          <a *ngIf="lead.email?.trim()" [href]="'mailto:' + lead.email?.trim()">
+            {{ lead.email?.trim() }}
+          </a>
+        </td>
+        <td>
+          <a [routerLink]="['/lead-details', lead.id]" class="btn btn-outline-primary btn-sm">View</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!leads || leads.length === 0">
+    <p>No leads available</p>
+  </div>
+
+
+</div>
+

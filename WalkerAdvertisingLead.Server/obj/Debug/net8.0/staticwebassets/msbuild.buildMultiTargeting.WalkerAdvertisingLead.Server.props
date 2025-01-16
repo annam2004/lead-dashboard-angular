@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WalkerAdvertisingLead.Server.props" />
+</Project>

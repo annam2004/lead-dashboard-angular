@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "gKHEE72L4saU5EUtwht28qGYLcUNZ9Jsec1r/z7lShk=",
+  "Source": "WalkerAdvertisingLead.Server",
+  "BasePath": "_content/WalkerAdvertisingLead.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\trema\\source\\repos\\WalkerAdvertisingLead\\walkeradvertisinglead.client\\walkeradvertisinglead.client.esproj",
+      "Version": 2,
+      "Source": "walkeradvertisinglead.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
