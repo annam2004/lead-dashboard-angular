@@ -1,0 +1,10 @@
+<div class="container mt-4" *ngIf="lead">
+  <h2 class="mb-4">Lead Details</h2>
+  <p><strong>Name:</strong> {{ lead.name }}</p>
+  <p><strong>Phone Number:</strong> {{ lead.phoneNumber }}</p>
+  <p><strong>Zip Code:</strong> {{ lead.zipCode }}</p>
+  <p><strong>Email Permission:</strong> {{ lead.hasEmailPermission ? 'Yes' : 'No' }}</p>
+  <p><strong>Text Permission:</strong> {{ lead.hasTextPermission ? 'Yes' : 'No' }}</p>
+  <p><strong>Email:</strong> {{ lead.email || 'N/A' }}</p>
+  <a routerLink="/" class="btn btn-secondary btn-sm">Back to Dashboard</a>
+</div>

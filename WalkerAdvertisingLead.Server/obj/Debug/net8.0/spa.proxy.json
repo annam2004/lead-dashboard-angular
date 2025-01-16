@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:58665",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\trema\\source\\repos\\WalkerAdvertisingLead\\WalkerAdvertisingLead.Server\\..\\walkeradvertisinglead.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
